@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Petite-Blog/static/css/main.7d55a483.chunk.css",
-    "main.js": "/Petite-Blog/static/js/main.46acf3ae.chunk.js",
-    "main.js.map": "/Petite-Blog/static/js/main.46acf3ae.chunk.js.map",
+    "main.js": "/Petite-Blog/static/js/main.026e571b.chunk.js",
+    "main.js.map": "/Petite-Blog/static/js/main.026e571b.chunk.js.map",
     "runtime-main.js": "/Petite-Blog/static/js/runtime-main.c3d840e2.js",
     "runtime-main.js.map": "/Petite-Blog/static/js/runtime-main.c3d840e2.js.map",
     "static/js/2.e532741e.chunk.js": "/Petite-Blog/static/js/2.e532741e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.c3d840e2.js",
     "static/js/2.e532741e.chunk.js",
     "static/css/main.7d55a483.chunk.css",
-    "static/js/main.46acf3ae.chunk.js"
+    "static/js/main.026e571b.chunk.js"
   ]
 }
