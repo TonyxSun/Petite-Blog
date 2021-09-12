@@ -4,11 +4,11 @@ import {useHistory} from 'react-router-dom';
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const {data: note, isPending, error} = useFetch('https://my-json-server.typicode.com/tonyxsun/Petite-Note/notes/'+id)
+    const {data: note, isPending, error} = useFetch('https://petite-note-server.herokuapp.com/notes//'+id)
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://my-json-server.typicode.com/tonyxsun/Petite-Note/notes/' + note.id, {
+        fetch('https://petite-note-server.herokuapp.com/notes//' + note.id, {
             method: 'DELETE'
         }).then(()=> {
             history.push('/Petite-Note');

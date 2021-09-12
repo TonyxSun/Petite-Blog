@@ -12,7 +12,7 @@ const Create = () => {
         e.preventDefault();
         const note = {title, body, author};
         setIsPending(true);
-        fetch('https://my-json-server.typicode.com/tonyxsun/Petite-Note/notes', {
+        fetch('https://petite-note-server.herokuapp.com/notes/', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(note)
