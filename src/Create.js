@@ -4,51 +4,51 @@ import {useHistory} from 'react-router-dom';
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('mario');
+    const [author, setAuthor] = useState('mom');
     const [isPending, setIsPending] = useState(false);
     const history = useHistory();
 
     const handleSubmit = (e) => { 
         e.preventDefault();
-        const blog = {title, body, author};
+        const note = {title, body, author};
         setIsPending(true);
-        fetch('http://localhost:8000/blogs', {
+        fetch('https://my-json-server.typicode.com/tonyxsun/Petite-Note/notes', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(blog)
+            body: JSON.stringify(note)
         }).then(()=> {
-            console.log('created blog');
+            console.log('created note');
             setIsPending(false);
-            history.push('/');
+            history.push('/Petite-Note');
         })
     };
 
 
     return (<div className="create">
-        <h2>Add new blog</h2>
+        <h2>Add new note</h2>
         <form onSubmit={handleSubmit}>
-            <label>Blog title:</label>
+            <label>Title:</label>
             <input
                 type="text"
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
-            <label>Blog body:</label>
+            <label>Content:</label>
             <textarea
                 required
                 onChange={(e) => setBody(e.target.value)}
             />
-            <label>Blog author:</label>
+            <label>Author:</label>
             <select
                 value={author}
                 onChange={(e) => { setAuthor(e.target.value) }}
             >
-                <option value="mario">mario</option>
-                <option value="yoshi">yoshi</option>
+                <option value="mom">mom</option>
+                <option value="Hannah">Hannah</option>
             </select>
-            {!isPending && <button>Add Blog</button>}
-            {isPending && <button disabled>Adding blog</button>}
+            {!isPending && <button>Add Note</button>}
+            {isPending && <button disabled>Adding note</button>}
         </form>
     </div>);
 }

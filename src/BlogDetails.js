@@ -4,25 +4,25 @@ import {useHistory} from 'react-router-dom';
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const {data: blog, isPending, error} = useFetch('https://my-json-server.typicode.com/tonyxsun/Petite-Blog/db'+id)
+    const {data: note, isPending, error} = useFetch('https://my-json-server.typicode.com/tonyxsun/Petite-Note/notes/'+id)
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://my-json-server.typicode.com/tonyxsun/Petite-Blog/db' + blog.id, {
+        fetch('https://my-json-server.typicode.com/tonyxsun/Petite-Note/notes/' + note.id, {
             method: 'DELETE'
         }).then(()=> {
-            history.push('/');
+            history.push('/Petite-Note');
         })
     }
     return ( 
-        <div className="blog-details">
+        <div className="note-details">
             { isPending && <div> Loading... </div>}
             { error && <div> {error} </div>}
-            {blog && (
+            {note && (
                 <article>
-                    <h2>{blog.title}</h2>
-                    <p>Written by {blog.author}</p>
-                    <div>{blog.body}</div>
+                    <h2>{note.title}</h2>
+                    <p>Written by {note.author}</p>
+                    <div>{note.body}</div>
                     <button onClick={handleClick}>Delete</button>
                 </article>
             )}

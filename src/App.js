@@ -13,13 +13,12 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/"><Home />
+            <Route exact path="/Petite-Note/"><Home />
             </Route>
-            <Route path="/create"><Create />
+            <Route path="/Petite-Note/create"><Create />
             </Route>
-            <Route path="/blogs/:id"><BlogDetails /></Route>
-            <Route path="*"><NotFound /> </Route>
-
+            <Route path="/Petite-Note/notes/:id"><BlogDetails /></Route>
+            <Route path="/Petite-Note/*"><NotFound /> </Route>
           </Switch>
         </div>
       </div>
