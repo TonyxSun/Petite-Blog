@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Petite-Blog/static/css/main.7d55a483.chunk.css",
-    "main.js": "/Petite-Blog/static/js/main.3d92d04d.chunk.js",
-    "main.js.map": "/Petite-Blog/static/js/main.3d92d04d.chunk.js.map",
-    "runtime-main.js": "/Petite-Blog/static/js/runtime-main.c3d840e2.js",
-    "runtime-main.js.map": "/Petite-Blog/static/js/runtime-main.c3d840e2.js.map",
-    "static/js/2.e532741e.chunk.js": "/Petite-Blog/static/js/2.e532741e.chunk.js",
-    "static/js/2.e532741e.chunk.js.map": "/Petite-Blog/static/js/2.e532741e.chunk.js.map",
-    "index.html": "/Petite-Blog/index.html",
-    "static/css/main.7d55a483.chunk.css.map": "/Petite-Blog/static/css/main.7d55a483.chunk.css.map",
-    "static/js/2.e532741e.chunk.js.LICENSE.txt": "/Petite-Blog/static/js/2.e532741e.chunk.js.LICENSE.txt"
+    "main.css": "/Petite-Note/static/css/main.f07010b0.chunk.css",
+    "main.js": "/Petite-Note/static/js/main.030bfe6c.chunk.js",
+    "main.js.map": "/Petite-Note/static/js/main.030bfe6c.chunk.js.map",
+    "runtime-main.js": "/Petite-Note/static/js/runtime-main.f559b7c1.js",
+    "runtime-main.js.map": "/Petite-Note/static/js/runtime-main.f559b7c1.js.map",
+    "static/js/2.879cf276.chunk.js": "/Petite-Note/static/js/2.879cf276.chunk.js",
+    "static/js/2.879cf276.chunk.js.map": "/Petite-Note/static/js/2.879cf276.chunk.js.map",
+    "index.html": "/Petite-Note/index.html",
+    "static/css/main.f07010b0.chunk.css.map": "/Petite-Note/static/css/main.f07010b0.chunk.css.map",
+    "static/js/2.879cf276.chunk.js.LICENSE.txt": "/Petite-Note/static/js/2.879cf276.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3d840e2.js",
-    "static/js/2.e532741e.chunk.js",
-    "static/css/main.7d55a483.chunk.css",
-    "static/js/main.3d92d04d.chunk.js"
+    "static/js/runtime-main.f559b7c1.js",
+    "static/js/2.879cf276.chunk.js",
+    "static/css/main.f07010b0.chunk.css",
+    "static/js/main.030bfe6c.chunk.js"
   ]
 }
